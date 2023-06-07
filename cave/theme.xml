@@ -1,0 +1,13 @@
+<theme>
+<formatVersion>4</formatVersion>
+<include>./../theme.xml</include>
+
+<view name="system, basic, detailed, video, grid">
+  <text name="shortdescription" extra="true">
+   <text>2004  ·  COIN OPERATED CABINET</text>
+  </text>
+  <text name="longdescription" extra="true">
+   <text>The CAVE CV1000 (also known as Cave SH-3 hardware) is the third generation arcade hardware from Cave.</text>
+  </text>
+ </view>
+</theme>

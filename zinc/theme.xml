@@ -1,0 +1,13 @@
+<theme>
+<formatVersion>4</formatVersion>
+<include>./../theme.xml</include>
+
+<view name="system, basic, detailed, video, grid">
+  <text name="shortdescription" extra="true">
+   <text>1995  ·  COIN OPERATED CABINET</text>
+  </text>
+  <text name="longdescription" extra="true">
+   <text>ZiNc is a command-line Windows emulator for arcade hardware based on Sony PlayStation hardware. These hardware systems include Sony ZiNc (ZN1 & ZN2) and Namco System 11.</text>
+  </text>
+ </view>
+</theme>

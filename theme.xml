@@ -1,0 +1,255 @@
+<!--
+theme name:     Nostalgia Pure
+author:         Frakatchoo (aka Muttonheads)
+youtube:        https://www.youtube.com/c/muttonheadsofficial
+
+# Thanks and Credits
+
+Videos Backgounds by viking, dragon57 & JPGIII
+Nostalgia Video Set : https://forums.launchbox-app.com/files/file/219-nostalgia-169-video-set/
+
+Some logos used in this theme are created or were taken from Chicuelo Theme (www.chicuelo.com.ar)
+
+-->
+
+<theme>
+<formatVersion>4</formatVersion>
+ 
+
+<!-- System View -->
+
+<feature supported="carousel">
+<view name="system">
+  <video name="md_video" extra="true">
+      <path>./_assets/backgrounds/${system.theme}.mp4</path>
+	  <tile>false</tile>
+      <color>FFFFFFFF</color>
+     <origin>0 0</origin>
+		<pos>0 0</pos>
+		<size>1 1</size>
+      <maxSize>1 1</maxSize>
+      <delay>0</delay>
+	  <showSnapshotNoVideo>true</showSnapshotNoVideo>
+	<showSnapshotDelay>true</showSnapshotDelay>
+ </video>
+
+ <image name="background" extra="true">
+	<tile>false</tile>
+	<path>./_assets/system-global-bg.png</path>
+	<size>1 1</size>
+	<pos>0 0</pos>
+ </image>
+ <text name="shortdescription" extra="true">
+	<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+	<alignment>center</alignment>
+	<forceUppercase>1</forceUppercase>
+	<fontSize>0.03</fontSize>
+	<color>FFFFFF</color>
+	<origin>0.5 0.5</origin>
+	<pos>0.232 0.25</pos>
+	<size>0.32 0.1</size>
+ </text>
+
+ <image name="logo">
+	<path>./_assets/logos/${system.theme}.svg</path>
+	<color>FFFFFF</color>
+ </image>
+
+ <carousel name="systemcarousel">
+	<type>vertical_wheel</type>
+	<color>00000000</color>
+	<origin>0.5 0.5</origin>
+	<pos>0.232 0.415</pos>
+	<size>1 0.16</size> 
+	<logoScale>0.75</logoScale>
+	<logoSize>0.32 0.20</logoSize>
+	<logoRotationOrigin>100 0.5</logoRotationOrigin>
+	<logoRotation>0.5</logoRotation>
+	<maxLogoCount>2</maxLogoCount>
+ </carousel>
+
+ <text name="systemInfo">
+	<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+	<alignment>center</alignment>
+	<backgroundColor>00000000</backgroundColor>
+	<color>FFFFFF</color>
+	<origin>0.5 0.5</origin>
+	<pos>0.232 0.77</pos>
+	<size>0.980 0.050</size>
+	<fontSize>0.025</fontSize>
+ </text>
+ 
+ <text name="longdescription" extra="true">
+	<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+	<alignment>center</alignment>
+	<forceUppercase>0</forceUppercase>
+	<fontSize>0.02</fontSize>
+	<color>666666</color>
+	<origin>0.5 0.5</origin>
+	<pos>0.232 0.58</pos>
+	<size>0.20 0.1</size>
+ </text>
+ 
+ <helpsystem name="help">
+    <fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+    <fontSize>0.021</fontSize>
+	<pos>0.054 0.975</pos>
+	<textColor>818181</textColor>
+    <iconColor>818181</iconColor>
+ </helpsystem>
+  
+</view>
+</feature>
+
+
+<!-- Gamelist View -->
+
+<view name="detailed, video">
+
+ <image name="background" extra="true">
+	<tile>false</tile>
+	<path>./_assets/ingame-global-bg.png</path>
+	<size>1 1</size>
+	<pos>0 0</pos>
+ </image>
+
+ <image name="logo2" extra="true">
+	<path>./_assets/logos/${system.theme}.svg</path>
+	<color>ffffff</color>
+	<origin>0.5 0.5</origin>
+	<pos>0.268 0.13</pos>
+	<maxSize>0.24 0.10</maxSize>
+ </image>
+ 
+ <text name="shortdescription" extra="true">
+	<pos>1 1</pos>
+ </text>
+ 
+ <text name="longdescription" extra="true">
+	<origin>0 0</origin>
+	<pos>1 1</pos>
+ </text>
+ 
+<textlist name="gamelist">
+	<selectorColor>ffffff</selectorColor>
+	<selectorImagePath>./_assets/icon.png</selectorImagePath>
+	<scrollSound>./sounds/se_sys_cursor.wav</scrollSound>
+	<selectedColor>FFFFFF</selectedColor>
+	<selectorHeight>.04</selectorHeight>
+	<primaryColor>bbbbbb</primaryColor>
+	<secondaryColor>bbbbbb</secondaryColor>
+	<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+	<alignment>left</alignment>
+	<forceUppercase>1</forceUppercase>
+	<pos>0.07 0.264</pos>
+	<size>0.395 0.62</size>
+	<fontSize>0.022</fontSize>
+	<lineSpacing>1.54</lineSpacing>
+	<horizontalMargin>0.05</horizontalMargin>
+</textlist>
+
+<helpsystem name="help">
+    <fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+    <fontSize>0.021</fontSize>
+	<pos>0.054 0.975</pos>
+	<textColor>818181</textColor>
+    <iconColor>818181</iconColor>
+</helpsystem>
+
+<!-- Hide Unused Elements -->	
+ <text name="md_lbl_genre, md_genre, md_lbl_releasedate, md_lbl_developer, md_developer, md_lbl_players, md_players, md_lbl_rating">
+	<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+	<forceUppercase>0</forceUppercase>
+	<fontSize>0.02</fontSize>
+	<color>666666</color>
+	<alignment>left</alignment>
+	<size>0.11 0.02</size>
+ </text>
+ <text name="md_lbl_genre">
+	<origin>0.5 0.5</origin>
+	<pos>0.536 0.761</pos>
+	<color>444444</color>
+ </text>
+ <text name="md_genre">
+	<origin>0.5 0.5</origin>
+	<pos>0.60 0.761</pos>
+ </text>
+ <text name="md_lbl_releasedate">
+	<origin>0.5 0.5</origin>
+	<pos>0.536 0.791</pos>
+	<color>444444</color>
+ </text>
+ <datetime name="md_releasedate">
+	<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+	<fontSize>0.02</fontSize>
+	<color>666666</color>
+	<pos>0.545 0.781</pos>
+	<size>0.11 0.02</size>
+ </datetime>
+ <text name="md_lbl_developer">
+	<origin>0.5 0.5</origin>
+	<pos>0.536 0.821</pos>
+	<color>444444</color>
+ </text>
+ <text name="md_developer">
+	<origin>0.5 0.5</origin>
+	<pos>0.60 0.821</pos>
+ </text>
+ <text name="md_lbl_players">
+	<origin>0.5 0.5</origin>
+	<pos>0.536 0.851</pos>
+	<color>444444</color>
+ </text>
+ <text name="md_players">
+	<origin>0.5 0.5</origin>
+	<pos>0.60 0.851</pos>
+  </text>
+ <text name="md_lbl_rating">
+	<origin>0.5 0.5</origin>
+	<pos>0.536 0.881</pos>
+	<color>444444</color>
+ </text>
+ <rating name="md_rating">
+	<origin>0.5 0.5</origin>
+	<pos>0.60 0.881</pos>
+	<size>0.11 0.02</size>
+	<color>666666</color>
+ </rating>
+ 
+ <text name="md_description">
+	<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+	<forceUppercase>0</forceUppercase>
+	<fontSize>0.02</fontSize>
+	<color>888888</color>
+	<origin>0.5 0.5</origin>
+	<pos>0.789 0.821</pos>
+	<size>0.25 0.16</size>
+ </text>
+ 
+</view>
+
+<view name="basic, detailed, grid">
+ <image name="md_image">
+	<origin>0.5 0.5</origin>
+	<pos>0.6925 0.3915</pos>
+	<maxSize>0.4167 0.5556</maxSize>
+ </image>
+</view>
+
+<feature supported="video">
+<view name="video">
+ <video name="md_video">
+	<origin>0.5 0.5</origin>
+	<pos>0.6925 0.3915</pos>
+	<maxSize>0.4167 0.5556</maxSize>
+	<delay>1.5</delay>
+	<showSnapshotNoVideo>true</showSnapshotNoVideo>
+	<showSnapshotDelay>true</showSnapshotDelay>
+ </video>
+ <sound name="launch">
+	<path>./sounds/se_sys_click_game.wav</path>
+</sound>
+</view>
+</feature>
+
+</theme>
